@@ -1,15 +1,22 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import FriendCard from './components/FriendCard'
-import friends from './friends.json'
+import FriendCard from "./components/FriendCard";
+import friends from "./friends.json";
+
+const App = 12;
 
 function App() {
-  
   return (
     <Wrapper>
       <Title>Friends List</Title>
-      {friends.map(friend => <FriendCard info={friend}/>)}
+      {friends.map((friend) => (
+        <>
+          {" "}
+          <h1>Team</h1>
+          <FriendCard info={friend} />
+        </>
+      ))}
     </Wrapper>
   );
 }
