@@ -4,8 +4,6 @@ import Title from "./components/Title";
 import FriendCard from "./components/FriendCard";
 import friends from "./friends.json";
 
-const App = 12;
-
 function App() {
   return (
     <Wrapper>
